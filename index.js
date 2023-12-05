@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded())
 app.use(cors())
 
-mongoose.connect(process.env.MONGO_URI, console.log("DB connected"))
+mongoose.connect("mongodb+srv://aadiaditya247:1234@cluster0.2sxu6zj.mongodb.net/GPI_DB?retryWrites=true&w=majority", console.log("DB connected"))
 
 const classDataSchema = new mongoose.Schema({
     name: {
