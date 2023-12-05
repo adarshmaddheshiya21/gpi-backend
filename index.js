@@ -143,7 +143,7 @@ app.post('/student-data/:adminId/:providedId', async (req, res) => {
                     const adminCoord = [classInfo.latitude, classInfo.longitude];
                     const userCoord = [data.latitude, data.longitude];
     
-                    const response = await axios.post('http://localhost:4000/check-distance', {
+                    const response = await axios.post('/check-distance', {
                         adminCoord,
                         userCoord,
                         radius
