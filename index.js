@@ -93,7 +93,7 @@ const StudentData = mongoose.model('StudentData', studentDataSchema);
 // http://localhost:4000/student-form/${req.params.admin_id}/${unique_id}
 app.get('/generate-link/:adminId', (req, res) => {
     console.log(req.params.adminId)
-    const uniqueLink = `https://gpi-frontend-p4ungdlug-adarshmaddheshiya21s-projects.vercel.app/class-form2`;
+    const uniqueLink = `https://superlative-flan-d47e20.netlify.app/class-form2`;
     res.json({ link: uniqueLink });
 });
 
